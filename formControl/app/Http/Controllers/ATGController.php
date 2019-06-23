@@ -17,7 +17,7 @@ class ATGController extends Controller
     public function store(Request $request){
         $request->validate([
             'name'    => 'required|min:2|max:50',
-            'email'   => 'required|email|unique:users,email|',
+            'email'   => 'required|email|unique:users,email|regex:/[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+.[a-zA-Z]{2,4}/',
             'pincode' => 'required|numeric|digits_between:6,6',
         ], [
             'name.required' => 'Name is required',
