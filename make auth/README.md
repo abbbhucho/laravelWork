@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/gobuffalo/tags.svg?branch=feat/1.0)](https://travis-ci.org/gobuffalo/tags)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/gobuffalo/tags)](https://goreportcard.com/report/github.com/gobuffalo/tags)
