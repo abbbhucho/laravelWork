@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('uuid/', function () {
+//     $uuidOne = Uuid::generate(1);
+//     $uuidFour = $uuidOne->string;
+//     dd($uuidFour, Uuid::import((string)$uuidFour), Uuid::compare($uuidFour, (string)Uuid::import((string)$uuidFour), $uuidOne->time));
+    
+// });
