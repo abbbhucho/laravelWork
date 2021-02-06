@@ -3,7 +3,7 @@
 
 public function getImageUsingGuzzle(){
         $client = new \GuzzleHttp\Client(['base_uri' => 'https://c4.wallpaperflare.com']);
-
+        // $contentTypeHeader = $response->getHeader('Content-Type')[0];
         $response = $client->request('GET', 'wallpaper/387/710/367/anime-original-blue-eyes-brown-hair-girl-hd-wallpaper-preview.jpg', ['stream' => true]);
         $body = $response->getBody();
         $string = $body->getContents();
